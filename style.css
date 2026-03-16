@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+}
+
+main {
+  width: 100%;
+}
+main section {
+  width: 100%;
+  padding: var(--padding-equal-2xl);
+  display: flex;
+  gap: var(--gutter-xl);
+}
+main section .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gutter-xl);
+  width: 60%;
+}
+main section .left .top {
+  display: flex;
+  align-items: center;
+  gap: var(--gutter-lg);
+}
+main section .left .top .btn {
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-md);
+  border: none;
+  outline: none;
+  color: var(--text-primary-color);
+  font-size: var(--font-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main section .left .top .btn:hover {
+  filter: brightness(1.2);
+  color: var(--text-secondary-color);
+}
+main section .left .top .btn:active {
+  transform: scale(0.93);
+}
+main section .left .top .upload {
+  background-color: var(--btn-upload);
+}
+main section .left .top .reset {
+  background-color: var(--btn-reset);
+}
+main section .left .top .download {
+  background-color: var(--btn-download);
+}
+main section .left .bottom {
+  width: 100%;
+  padding: var(--padding-equal-2xl);
+  border-radius: var(--border-radius-lg);
+  aspect-ratio: 7/4.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-tertiary-color);
+}
+main section .left .bottom .placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gutter-sm);
+  flex-direction: column;
+  opacity: 0.5;
+}
+main section .left .bottom .placeholder i {
+  font-size: 7rem;
+}
+main section .left .bottom .placeholder p {
+  font-size: var(--font-lg);
+}
+main section .right {
+  width: 35%;
+  background-color: var(--bg-secondary-color);
+  padding: var(--padding-lg);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-lg);
+}
+main section .right h2 {
+  font-size: var(--font-3xl);
+  font-weight: 600;
+}
+main section .right .filters {
+  width: 100%;
+  display: flex;
+  gap: var(--gutter-md);
+  flex-direction: column;
+}
+main section .right .filters p {
+  font-size: var(--font-lg);
+}
+main section .right .filters input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.3s ease;
+}
+main section .right .filters input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--slider-thumb-color);
+  margin-top: -7px;
+}
+main section .right .filters input::-webkit-slider-runnable-track {
+  background-color: var(--slider-track-color);
+  height: 6px;
+  border-radius: var(--border-radius-lg);
+}/*# sourceMappingURL=style.css.map */

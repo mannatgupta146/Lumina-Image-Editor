@@ -1,0 +1,58 @@
+:root{
+    /* bg colors */
+    --bg-primary-color: rgb(17, 16, 16);
+    --bg-secondary-color: rgb(34, 34, 34);
+    --bg-tertiary-color: rgb(51, 51, 51);
+    --bg-active-color: rgb(242, 59, 59);
+
+    /* buttons */
+    --btn-upload: cornflowerblue;
+    --btn-reset: rgb(221, 43, 43);
+    --btn-download: rgb(20, 201, 20);
+
+    /* text colors */
+    --text-primary-color: rgb(255, 255, 255);
+    --text-secondary-color: rgb(197, 197, 197);
+    --text-tertiary-color: rgb(146, 146, 146);
+    --text-active-color: rgb(24, 24, 24);
+
+    /* padding equal */
+    --padding-equal-sm: 0.25rem ;
+    --padding-equal-md: 0.5rem;
+    --padding-equal-lg: 0.75rem;
+    --padding-equal-xl: 1rem;
+    --padding-equal-2xl: 2rem;
+    --padding-equal-3xl: 3rem;
+
+    /* padding */
+    --padding-sm: 0.25rem 0.5rem;
+    --padding-md: 0.5rem 1rem;
+    --padding-lg: 1rem 2rem;
+    --padding-xl: 2rem 4rem;
+
+    /* border radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-radius-xl: 2rem;
+
+    /* gutter */
+    --gutter-sm: 0.25rem;
+    --gutter-md: 0.5rem;
+    --gutter-lg: 1rem;
+    --gutter-xl: 2rem;
+
+    /* font sizes */
+    --font-sm: 0.75rem;
+    --font-md: 0.875rem;    
+    --font-lg: 1.1rem;
+    --font-xl: 1.125rem;
+    --font-2xl: 1.5rem;
+    --font-3xl: 1.75rem;
+    --font-4xl: 2rem;
+
+    /* slider */
+    --slider-thumb-color: rgb(255, 193, 7);     /* Vibrant yellow/amber */
+    --slider-track-color: rgba(255, 255, 255, 0.2); /* Soft, translucent white that works as a light track without being too bright */
+    
+}
