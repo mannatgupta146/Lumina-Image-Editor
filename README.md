@@ -67,31 +67,31 @@ Lumina provides 9 powerful and intuitive filters to transform your images. Each 
 
 ### 🎭 Professional Presets
 
-Choose from 21 carefully crafted presets that combine filters for specific visual styles:
+21 expertly-crafted presets ready to use:
 
 🎬 **Normal** - Default | Original colors
-📷 **Vivid** - Landscapes | High saturation and contrast
-🌅 **Warm** - Portraits | Golden, flattering tones
-💧 **Cool** - Water scenes | Blue-shifted, calming
-⬛ **Black & White** - Classic | Pure monochrome
+📷 **Vivid** - Landscapes | High saturation & contrast
+🌅 **Warm** - Portraits | Golden tones
+💧 **Cool** - Water scenes | Blue-shifted
+⬛ **B&W** - Classic | Pure monochrome
 🎞️ **Vintage** - Retro | Faded sepia
-☁️ **Faded** - Dreamy | Low contrast, soft
+☁️ **Faded** - Dreamy | Low contrast
 ⚡ **Dramatic** - Bold | Maximum contrast
-✨ **Dreamy** - Artistic | Soft blur and warmth
-🌟 **Neon** - Modern | Vibrant, futuristic
-🕰️ **Retro** - 70s/80s | Warm sepia tone
-🔆 **High Contrast** - Graphics | Maximum detail
-😌 **Soft** - Minimalist | Gentle, smooth
-🎬 **Noir** - Moody | Extreme B&W contrast
-🟫 **Sepia** - Antique | Classic brown tones
-🌊 **Ocean** - Water | Cool saturated blues
-🌇 **Sunset** - Golden hour | Orange/gold warmth
-🌙 **Midnight** - Night | Cool, dark tones
-💜 **Cyberpunk** - Futuristic | Intense purples
-🌲 **Forest** - Nature | Green-shifted tones
+✨ **Dreamy** - Artistic | Soft + warm
+🌟 **Neon** - Modern | Vibrant
+🕰️ **Retro** - 70s/80s | Warm sepia
+🔆 **High Contrast** - Graphics | Max detail
+😌 **Soft** - Minimalist | Gentle
+🎭 **Noir** - Moody | Extreme B&W
+🟫 **Sepia** - Antique | Brown tones
+🌊 **Ocean** - Water | Cool blues
+🌇 **Sunset** - Golden hour | Orange/gold
+🌙 **Midnight** - Night | Cool dark
+💜 **Cyberpunk** - Futuristic | Purple hues
+🌲 **Forest** - Nature | Green tones
 📸 **Polaroid** - Instant film | Warm vintage
 
-_Presets are starting points - adjust sliders after applying for custom results._
+_Presets are starting points - adjust sliders for custom results._
 
 ### 🎯 User Experience
 
@@ -159,39 +159,11 @@ start index.html
 
 ### Step-by-Step Usage
 
-**Step 1: Upload an Image** 📤
-
-- Click the blue **Upload** button in the navbar
-- Select an image file from your device (JPG, PNG, GIF, WebP supported)
-- Your image appears instantly on the left
-- _Tip:_ Upload a new image anytime without losing current edits
-
-**Step 2: Adjust Filters** 🎚
-
-- Use the slider controls in the **Adjustments** sidebar panel
-- Move each slider left/right to see real-time preview changes
-- Current value displays next to slider for precision control
-- _Pro Tips:_ Start with Saturation, then Brightness/Contrast, then specialized filters
-
-**Step 3: Apply Presets** ⚡
-
-- Browse the **Presets** section below adjustments
-- Click any preset button to apply a professional filter combination
-- The active preset glows blue - you always know which is active
-- _Tip:_ Adjust individual sliders after applying for custom results
-- _Tip:_ Layer effects by applying one preset, adjusting sliders, then applying another
-
-**Step 4: Export Your Image** 💾
-
-- Click the green **Export** button when satisfied with edits
-- Image downloads as high-quality PNG file
-- Filename: `edited-image.png`
-- _Tip:_ Export multiple versions with different presets
-
-**Reset Anytime** 🔄
-
-- Click the red **Reset** button to restore all filters to defaults instantly
-- Clears only edits - original file is unaffected
+1. **Upload** - Click blue Upload button, select image
+2. **Adjust** - Use sliders to modify filters in real-time
+3. **Apply Presets** - Click any preset for instant style
+4. **Export** - Click Export to download as PNG
+5. **Reset** - Click Reset anytime to restore all filters
 
 ## Project Structure
 
@@ -265,38 +237,6 @@ Image Editor/
 | **Export creates blank file**       | Ensure image is uploaded - Reset filters then reapply - Use different image - Check download permissions          |
 | **Filters have no effect**          | Normal for subtle filters - Try max slider values - Combine with other filters                                    |
 | **Can't undo changes**              | Click **Reset** to restore all filters instantly - No multi-level undo, but one-click reset always available      |
-
-## Performance 🚀
-
-- **Lightweight** - Only ~50KB total (minified), super fast page load
-- **No Dependencies** - Zero npm packages = instant load, no waiting
-- **GPU Accelerated** - Canvas filters use GPU for silky smooth 60+ FPS
-- **Real-time Processing** - Typically <16ms per frame (that's 60+ times per second)
-- **Memory Efficient** - Single canvas rendering, no memory leaks
-- **Works Offline** - No internet needed after initial page load
-- **Optimized for Desktop/Tablet** - Best experience on larger screens
-
-## How It Works
-
-### Image Processing Architecture
-
-Lumina uses the **HTML5 Canvas API** combined with modern CSS filters to deliver real-time image processing:
-
-**Processing Pipeline:**
-
-1. User uploads an image via the file input
-2. Image is loaded into a canvas element (HTML5 Canvas)
-3. Filter adjustments trigger real-time re-rendering
-4. Canvas `filter` property applies all active filters simultaneously
-5. Image preview updates instantly (typically within 16ms)
-6. User can download the final result as PNG
-
-**Performance Optimization:**
-
-- Filters use native browser APIs (no heavy computation)
-- Real-time processing at 60+ frames per second on modern browsers
-- Minimal memory footprint with efficient DOM manipulation
-- Lazy loading of preset data
 
 ## Known Limitations 📋
 
