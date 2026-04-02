@@ -2,7 +2,7 @@
 
 **Transform your photos with professional-grade editing in seconds.**
 
-Lumina is a modern, intuitive web-based image editor featuring 9 powerful adjustable filters and 21 expertly-crafted presets. Built with pure HTML5, CSS3, and JavaScript, Lumina delivers real-time image processing directly in your browser—no downloads, no subscriptions, no complicated tools. Perfect for photographers, social media creators, content creators, and anyone who wants to enhance their images quickly and easily.
+Lumina is a modern, intuitive web-based image editor featuring 9 powerful adjustable filters and 21 expertly-crafted presets. Built with pure HTML5, CSS3, and JavaScript, Lumina delivers real-time image processing directly in your browser - no downloads, no subscriptions, no complicated tools. Perfect for photographers, social media creators, content creators, and anyone who wants to enhance their images quickly and easily.
 
 **Why Lumina?**
 
@@ -19,7 +19,6 @@ Lumina is a modern, intuitive web-based image editor featuring 9 powerful adjust
 - [Quick Start](#quick-start-guide) - Get started in 5 minutes
 - [Features](#features) - Filters & Presets overview
 - [Installation](#installation) - Clone & run locally
-- [Workflows](#example-workflows) - Real-world use cases
 - [Tips & Tricks](#tips--tricks-for-better-editing) - Pro editing techniques
 - [Troubleshooting](#troubleshooting) - Common issues & solutions
 - [Customization](#customization--extension-guide) - Add your own presets
@@ -53,66 +52,68 @@ cd Lumina-Image-Editor
 
 Lumina provides 9 powerful and intuitive filters to transform your images. Each filter is adjustable via interactive sliders with real-time preview. All adjustments are non-destructive—your original image remains unchanged.
 
-| Filter           | Range | Unit | Description & Tips                                                                                                                                                                        |
-| ---------------- | ----- | ---- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Brightness**   | 0-200 | %    | Increase or decrease the overall brightness of the image. 100% is the original brightness. Tip: Use 110-120% to fix slightly underexposed photos without losing detail.                   |
-| **Contrast**     | 0-200 | %    | Control the difference between light and dark areas. Higher values create more dramatic differences. Tip: Combine with saturation for more impact (both at 120% for vibrant look).        |
-| **Saturation**   | 0-200 | %    | Adjust color intensity from muted to vibrant. 0% creates greyscale, 200% creates hyper-saturated colors. Tip: Use 130% for Instagram-ready social media photos.                           |
-| **Hue Rotation** | 0-360 | °    | Rotate colors around the color wheel for creative color shifts. 180° inverts all colors, creating a complementary palette. Tip: Small adjustments (20-40°) can shift warm to cool tones.  |
-| **Blur**         | 0-20  | px   | Apply Gaussian blur effect for softness, depth, and dreamy aesthetics. Useful for background separation and focus effects. Tip: Combine with reduced contrast for soft, gentle portraits. |
-| **Grayscale**    | 0-200 | %    | Convert colors to shades of gray with fully controllable intensity. Can be stacked beyond 100% for inverted intensified effects. Tip: 100% creates classic B&W; try 50% for muted tones.  |
-| **Sepia**        | 0-200 | %    | Add warm, brownish vintage tones reminiscent of old photographs. Perfect for retro aesthetics and nostalgic vibes. Tip: Combine with 70% grayscale for authentic vintage film look.       |
-| **Invert**       | 0-200 | %    | Reverse colors creating negative-like effects ideal for experimental and artistic photography. Tip: Combine with hue rotation for surreal, otherworldly effects.                          |
-| **Opacity**      | 0-100 | %    | Control image transparency from invisible to fully visible. Creates overlay effects and blending opportunities. Tip: Use 30-50% opacity for watermark protection on social media.         |
+| Filter           | Range | Unit | Description                                                                                             |
+| ---------------- | ----- | ---- | ------------------------------------------------------------------------------------------------------- |
+| **Brightness**   | 0-200 | %    | Adjust overall brightness. Tip: Use 110-120% to fix underexposed photos.                               |
+| **Contrast**     | 0-200 | %    | Control light and dark differences. Tip: Combine with saturation at 120% for vibrant look.             |
+| **Saturation**   | 0-200 | %    | Adjust color intensity. 0% = grayscale, 200% = hyper-saturated. Tip: Use 130% for social media.       |
+| **Hue Rotation** | 0-360 | deg  | Rotate colors around the wheel. Tip: 180 degrees inverts colors, 20-40 degrees shifts warm to cool.    |
+| **Blur**         | 0-20  | px   | Apply Gaussian blur for softness. Tip: Combine with reduced contrast for portraits.                    |
+| **Grayscale**    | 0-200 | %    | Convert to shades of gray. Tip: 100% = classic B&W, 50% = muted tones.                                 |
+| **Sepia**        | 0-200 | %    | Add warm, brownish vintage tones. Tip: Combine with 70% grayscale for authentic vintage.               |
+| **Invert**       | 0-200 | %    | Reverse colors for negative effect. Tip: Combine with hue rotation for surreal effects.                |
+| **Opacity**      | 0-100 | %    | Control transparency. Tip: Use 30-50% for watermark protection.                                        |
 
 ### 🎭 Professional Presets
 
-Choose from 21 carefully crafted presets that combine multiple filters to achieve specific visual styles instantly. Each preset is optimized for different photography styles, moods, and social platforms. **Presets are starting points**—you can still fine-tune individual filters after applying any preset:
+Choose from 21 carefully crafted presets that combine filters for specific visual styles:
 
-| Preset            | Best For              | Visual Characteristics & Tips                    |
-| ----------------- | --------------------- | ------------------------------------------------ |
-| **Normal**        | Reference/Default     | Original image—use as baseline for comparison    |
-| **Vivid**         | Landscapes, Nature    | 140% saturation + high contrast—punchy & vibrant |
-| **Warm**          | Portraits, Sunsets    | Golden glow—flatters skin tones beautifully      |
-| **Cool**          | Water, Calm Scenes    | Blue-shifted—creates serene, peaceful moods      |
-| **Black & White** | Classic Photography   | Pure monochrome—timeless, professional elegance  |
-| **Vintage**       | Retro, Nostalgia      | Faded sepia—aged film look with character        |
-| **Faded**         | Dreamy, Soft Focus    | Low contrast—washed out ethereal appearance      |
-| **Dramatic**      | Bold Statements       | Maximum contrast—striking, eye-catching impact   |
-| **Dreamy**        | Artistic, Creative    | Soft blur + warmth—magical, otherworldly feel    |
-| **Neon**          | Modern, Cyberpunk     | Vibrant saturation—bold futuristic aesthetic     |
-| **Retro**         | 70s/80s Vibe          | Warm sepia + grain—authentic decade feel         |
-| **High Contrast** | Technical, Graphics   | Precise detail—maximum visibility & separation   |
-| **Soft**          | Gentle, Minimalist    | Low contrast + blur—smooth, approachable look    |
-| **Noir**          | Film Noir, Moody      | Extreme B&W contrast—dramatic cinematography     |
-| **Sepia**         | Antique, Historical   | Classic brown tones—museum-quality vintage       |
-| **Ocean**         | Aquatic Scenes        | Cool saturated blues—perfect for water photos    |
-| **Sunset**        | Golden Hour           | Orange/gold warmth—amplifies natural sunset hues |
-| **Midnight**      | Night Photography     | Cool darkness—mysterious atmospheric quality     |
-| **Cyberpunk**     | Digital Art, Futurism | Intense purples & magentas—ultra-modern vibe     |
-| **Forest**        | Green Nature          | Green-shifted saturation—lush & natural tones    |
-| **Polaroid**      | Instant Film          | Warm + soft—nostalgic instant camera aesthetic   |
+| Preset | Best For | Visual Style |
+|--------|----------||---------|
+| Normal | Default | Original colors |
+| Vivid | Landscapes | High saturation and contrast |
+| Warm | Portraits | Golden, flattering tones |
+| Cool | Water scenes | Blue-shifted, calming |
+| Black & White | Classic | Pure monochrome |
+| Vintage | Retro | Faded sepia |
+| Faded | Dreamy | Low contrast, soft |
+| Dramatic | Bold | Maximum contrast |
+| Dreamy | Artistic | Soft blur and warmth |
+| Neon | Modern | Vibrant, futuristic |
+| Retro | 70s/80s | Warm sepia tone |
+| High Contrast | Graphics | Maximum detail |
+| Soft | Minimalist | Gentle, smooth |
+| Noir | Moody | Extreme B&W contrast |
+| Sepia | Antique | Classic brown tones |
+| Ocean | Water | Cool saturated blues |
+| Sunset | Golden hour | Orange/gold warmth |
+| Midnight | Night | Cool, dark tones |
+| Cyberpunk | Futuristic | Intense purples |
+| Forest | Nature | Green-shifted tones |
+| Polaroid | Instant film | Warm vintage |
+
+*Presets are starting points - adjust sliders after applying for custom results.*
 
 ### 🎯 User Experience
 
-- **Real-time Preview** - See changes instantly as you adjust sliders without delay (typically <16ms)
-- **Live Value Display** - Current filter values displayed next to each slider with units (e.g., 120%, 45°, 8px) for precision control
-- **Interactive Controls** - Smooth, responsive sliders with intuitive ranges and visual feedback
-- **Preset Highlighting** - Active preset button is visually highlighted in blue glow—you always know which preset is applied
-- **Custom Scrollbar** - Modern, styled scrollbar on the sidebar for smooth, aesthetically pleasing navigation
-- **Professional Layout** - Clean, modern UI inspired by professional editing software (Figma, Adobe Lightroom style)
-- **Optimal Spacing** - Comfortable padding and gaps for easy thumb access on all controls
-- **Non-scrollable Design** - All major controls fit on screen without excessive scrolling needed
-- **Keyboard Friendly** - Intuitive workflow with mouse/trackpad but optimized for touch devices
-- **Lightweight & Fast** - ~50KB total size, instant page load, works offline
+- **Real-time Preview** - See changes instantly as you adjust sliders
+- **Live Value Display** - Current values displayed next to each slider for precision control
+- **Interactive Controls** - Smooth, responsive sliders with intuitive ranges
+- **Preset Highlighting** - Active preset glows blue so you know what is applied
+- **Custom Scrollbar** - Modern, styled sidebar scrollbar for smooth navigation
+- **Professional Layout** - Clean, modern UI inspired by professional editing software
+- **Optimal Spacing** - Comfortable padding for easy access to all controls
+- **Non-scrollable Design** - All controls fit on screen without excessive scrolling
+- **Keyboard Friendly** - Intuitive workflow with mouse, trackpad, or touch
+- **Lightweight & Fast** - ~50KB total, instant page load, works offline
 
 ### 📥 Core Features
 
-- **Upload Images** - Support for all common image formats (JPG, PNG, GIF, WebP, SVG) with instant preview
-- **Reset Button** - Instantly restore all filters to original defaults with one click—never lose your original
-- **Export Images** - Download your edited images as high-quality PNG files preserving all quality and transparency
-- **Fast Processing** - Lightning-fast real-time filter application using native Canvas API (GPU-accelerated)
-- **Non-Destructive Editing** - Your original file is never modified; all changes are temporary until export
+- **Upload Images** - All common formats (JPG, PNG, GIF, WebP, SVG) with instant preview
+- **Reset Button** - Restore all filters to defaults with one click
+- **Export Images** - Download high-quality PNG files
+- **Fast Processing** - Real-time filter application using Canvas API
+- **Non-Destructive Editing** - Original file never modified until export
 
 ## Installation
 
@@ -160,82 +161,35 @@ start index.html
 
 - Click the blue **Upload** button in the navbar
 - Select an image file from your device (JPG, PNG, GIF, WebP supported)
-- Your image appears instantly in the canvas on the left side
-- _Tip:_ You can upload a new image anytime without losing your current edits
+- Your image appears instantly on the left
+- _Tip:_ Upload a new image anytime without losing current edits
 
-**Step 2: Adjust Filters** 🎚️
+**Step 2: Adjust Filters** 🎚
 
-- Use the slider controls in the **Adjustments** sidebar panel on the right
-- Move each slider left/right to see real-time preview changes on your image
-- Current value is displayed next to slider (%, °, or px) for precise control
-- _Pro Tips:_
-  - Start with Saturation for impact
-  - Then adjust Brightness/Contrast for balance
-  - Fine-tune with specialized filters (Blur, Sepia, etc.)
+- Use the slider controls in the **Adjustments** sidebar panel
+- Move each slider left/right to see real-time preview changes
+- Current value displays next to slider for precision control
+- _Pro Tips:_ Start with Saturation, then Brightness/Contrast, then specialized filters
 
 **Step 3: Apply Presets** ⚡
 
-- Browse the **Presets** section below the adjustments
-- Click any preset button to instantly apply a professional filter combination
-- The active preset is highlighted in blue—you always know which preset is active
-- _Tip:_ Presets are starting points; you can still fine-tune individual sliders after applying
-- Layer effects by applying one preset, then adjusting sliders, then applying another
+- Browse the **Presets** section below adjustments
+- Click any preset button to apply a professional filter combination
+- The active preset glows blue - you always know which is active
+- _Tip:_ Adjust individual sliders after applying for custom results
+- _Tip:_ Layer effects by applying one preset, adjusting sliders, then applying another
 
 **Step 4: Export Your Image** 💾
 
-- Once satisfied with your edits, click the green **Export** button
-- Your edited image downloads as a high-quality PNG file
-- Filename format: `edited-image.png`
-- _Pro Tip:_ Export multiple versions with different presets for comparison
+- Click the green **Export** button when satisfied with edits
+- Image downloads as high-quality PNG file
+- Filename: `edited-image.png`
+- _Tip:_ Export multiple versions with different presets
 
 **Reset Anytime** 🔄
 
-- Click the red **Reset** button to restore ALL filters to defaults instantly
-- This clears only the edits—your original image file is unaffected
-- Perfect for starting fresh or comparing before/after versions
-- _Tip:_ No undo needed because reset is always one click away
-
-### Example Workflows 🎬
-
-**Workflow 1: Fix Underexposed Photos** 📸
-
-- Step 1: Apply Vivid preset for instant punch
-- Step 2: Increase Brightness (110-130%) for detail
-- Step 3: Boost Contrast (110-120%) for definition
-- Step 4: Add Saturation (120-140%) for vibrancy
-- _Result:_ Professional-looking rescued photo
-
-**Workflow 2: Create Authentic Vintage Look** 🎞️
-
-- Step 1: Apply Polaroid or Vintage preset
-- Step 2: Reduce Saturation by 20-30% for authentic faded feel
-- Step 3: Add slight Sepia (30-50%) for vintage warmth
-- Step 4: Reduce Contrast by 10-20% for film authenticity
-- _Result:_ Nostalgic retro aesthetic
-
-**Workflow 3: Bold Artistic/Surreal Effects** 🎨
-
-- Step 1: Apply Cyberpunk or Neon preset
-- Step 2: Adjust Hue Rotation (30-80°) for unexpected color shifts
-- Step 3: Add controlled Invert (5-30%) for dreamlike quality
-- Step 4: Apply slight Blur (2-4px) for surreal softness
-- _Result:_ Eye-catching, experimental artistic photograph
-
-**Workflow 4: Professional Headshots** 👤
-
-- Step 1: Apply Warm preset for flattering skin tones
-- Step 2: Increase Brightness (+10-20%) to open eyes
-- Step 3: Boost Contrast (+20%) for facial definition
-- Step 4: Slightly increase Saturation (+10%) without overdoing
-- _Result:_ Professional, polished headshot ready for LinkedIn/portfolios
-
-**Workflow 5: Social Media Ready Content** 📱
-
-- Step 1: Apply Vivid preset for eye-catching feed
-- Step 2: Increase Saturation to 130-150% for maximum pop
-- Step 3: Adjust Brightness for consistency with feed aesthetic
-- Step 4: Add slight Blur (1-2px) for polished smoothness
-- _Result:_ Instagram/social media optimized imagery
+- Click the red **Reset** button to restore all filters to defaults instantly
+- Clears only edits - original file is unaffected
 
 ## Project Structure
 
@@ -286,56 +240,17 @@ Image Editor/
 
 ## Tips & Tricks for Better Editing 💡
 
-### Filter Combination Techniques
+**Power Trio** - Brightness +10-20% + Contrast +15-25% + Saturation +10-30% = Professional results
 
-**The Power Trio**
+**Soft Look** - Apply preset + Blur 2-4px + Reduce Contrast 10% + Add Sepia 5-10%
 
-- Combining three core adjustments creates professional results:
-  1. **Brightness +10-20%** - Opens up the image
-  2. **Contrast +15-25%** - Adds punch and depth
-  3. **Saturation +10-30%** - Makes colors pop
+**HDR Look** - Boost Contrast +30% + Saturation +40% + Brightness +15%
 
-**The Soft Look (Great for Portraits)**
-
-1. Apply any preset as a base
-2. Add **Blur 2-4px** for gentle softness
-3. Reduce **Contrast -10%** for approachable feel
-4. Add warmth with **Sepia 5-10%**
-
-**The HDR Look (Dramatic & Punchy)**
-
-1. Boost **Contrast +30%** for maximum separation
-2. Increase **Saturation +40%** for vibrant colors
-3. Push **Brightness +15%** for exposed highlights
-4. Add **Clarity** by combining high contrast + saturation
-
-### Preset Layering Strategy
-
-Apply one preset, manually adjust, then apply another for unique hybrid effects:
-
-- Apply "Warm" preset (+30% saturation)
-- Manually reduce saturation to 50% (creating custom intermediate look)
-- Then apply "Vintage" preset on top for blended effect
-- **Result:** Custom hybrid preset unique to your image
-
-### Settings by Scenario
-
-**Dark / Underexposed Images:**
-
-- Brightness: +20-30% | Contrast: +15-20% | Saturation: +10-15%
-
-**Blown Out / Overexposed Images:**
-
-- Brightness: -10-15% | Contrast: +15-25% | Saturation: Normal to -10%
-
-**Flat / Boring Images:**
-
-- Saturation: +20-40% | Contrast: +20-30% | Brightness: Adjust as needed
-
-**Color Correction / White Balance:**
-
-- Use Hue Rotation (5-15°) to shift blue→warm or warm→cool
-- Then fine-tune with Saturation if colors feel pushed
+**By Scenario:**
+- Dark photos: Brightness +20-30%, Contrast +15-20%, Saturation +10-15%
+- Bright photos: Brightness -10-15%, Contrast +15-25%, Saturation -10%
+- Flat photos: Saturation +20-40%, Contrast +20-30%
+- Color shift: Use Hue Rotation 5-15 degrees to adjust warm/cool tones
 
 ## Troubleshooting 🔧
 
