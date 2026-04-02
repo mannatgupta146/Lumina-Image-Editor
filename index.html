@@ -9,16 +9,23 @@
     <link rel="stylesheet" href="theme.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <i class="ri-drop-fill"></i>
+            <span>Lumina</span>
+        </div>
+        <div class="navbar-actions">
+            <label for="upload" class="btn upload"><i class="ri-upload-2-line"></i> Upload</label>
+            <input type="file" id="upload" accept="image/*" hidden>
+            <button class="btn reset"><i class="ri-refresh-line"></i> Reset</button>
+            <button class="btn export"><i class="ri-download-2-line"></i> Export</button>
+        </div>
+    </nav>
     <main>
-        <section>
-            <div class="left">
-                <div class="top">
-                    <label for="upload" class="btn upload">Upload Image</label>
-                    <input type="file" id="upload" accept="image/*" hidden>
-                    <button class="btn reset">Reset</button>
-                    <button class="btn download">Download</button>
-                </div>
-                <div class="bottom">
+        <div class="main-content">
+            <div class="image-panel">
+                <div class="image-container">
                     <div class="placeholder">
                         <i class="ri-image-upload-fill"></i>
                         <p>No image chosen</p>
@@ -26,16 +33,17 @@
                     <canvas id="image-canvas"></canvas>
                 </div>
             </div>
-
-            <div class="right">
-                <h2>Filters</h2>
-                <div class="filters"></div>
-                <h2>Presets</h2>
-                <div class="presets">
-                    
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <div class="sidebar-title"><i class="ri-sliders-2-line"></i> Adjustments</div>
+                    <div class="filters"></div>
                 </div>
-            </div>
-        </section>
+                <div class="sidebar-section">
+                    <div class="sidebar-title"><i class="ri-magic-line"></i> Presets</div>
+                    <div class="presets"></div>
+                </div>
+            </aside>
+        </div>
     </main>
     
     <script src="script.js"></script>
