@@ -69,27 +69,15 @@ Lumina provides 9 powerful and intuitive filters to transform your images. Each 
 
 21 expertly-crafted presets ready to use:
 
-🎬 **Normal** - Default | Original colors
-📷 **Vivid** - Landscapes | High saturation & contrast
-🌅 **Warm** - Portraits | Golden tones
-💧 **Cool** - Water scenes | Blue-shifted
-⬛ **B&W** - Classic | Pure monochrome
-🎞️ **Vintage** - Retro | Faded sepia
-☁️ **Faded** - Dreamy | Low contrast
-⚡ **Dramatic** - Bold | Maximum contrast
-✨ **Dreamy** - Artistic | Soft + warm
-🌟 **Neon** - Modern | Vibrant
-🕰️ **Retro** - 70s/80s | Warm sepia
-🔆 **High Contrast** - Graphics | Max detail
-😌 **Soft** - Minimalist | Gentle
-🎭 **Noir** - Moody | Extreme B&W
-🟫 **Sepia** - Antique | Brown tones
-🌊 **Ocean** - Water | Cool blues
-🌇 **Sunset** - Golden hour | Orange/gold
-🌙 **Midnight** - Night | Cool dark
-💜 **Cyberpunk** - Futuristic | Purple hues
-🌲 **Forest** - Nature | Green tones
-📸 **Polaroid** - Instant film | Warm vintage
+|                                 |                                |                                   |
+| ------------------------------- | ------------------------------ | --------------------------------- |
+| 🎬 **Normal** - Original colors | 📷 **Vivid** - High saturation | 🌅 **Warm** - Golden tones        |
+| 💧 **Cool** - Blue-shifted      | ⬛ **B&W** - Pure monochrome   | 🎞️ **Vintage** - Faded sepia      |
+| ☁️ **Faded** - Low contrast     | ⚡ **Dramatic** - Max contrast | ✨ **Dreamy** - Soft + warm       |
+| 🌟 **Neon** - Vibrant           | 🕰️ **Retro** - Warm sepia      | 🔆 **High Contrast** - Max detail |
+| 😌 **Soft** - Gentle            | 🎭 **Noir** - Extreme B&W      | 🟫 **Sepia** - Brown tones        |
+| 🌊 **Ocean** - Cool blues       | 🌇 **Sunset** - Orange/gold    | 🌙 **Midnight** - Cool dark       |
+| 💜 **Cyberpunk** - Purple hues  | 🌲 **Forest** - Green tones    | 📸 **Polaroid** - Warm vintage    |
 
 _Presets are starting points - adjust sliders for custom results._
 
