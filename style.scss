@@ -165,6 +165,34 @@ main{
                     }
                 }
             }
+
+            .presets{
+                display: flex;
+                gap: var(--gutter-md);
+                flex-wrap: wrap;
+
+                button{
+                    padding: var(--padding-md);
+                    border-radius: var(--border-radius-md);
+                    border: 1px solid var(--text-secondary-color);
+                    outline: none;
+                    background-color: transparent;
+                    color: var(--text-secondary-color);
+                    font-size: var(--font-md);
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover{
+                        filter: brightness(1.2);
+                        color: var(--text-secondary-color);
+                    }
+
+                    &:active{
+                        transform: scale(0.95);
+                    }     
+                }
+            }
         }
     }
 }

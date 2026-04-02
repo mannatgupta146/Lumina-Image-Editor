@@ -148,4 +148,28 @@ main section .right .filters input::-webkit-slider-runnable-track {
   background-color: var(--slider-track-color);
   height: 6px;
   border-radius: var(--border-radius-lg);
+}
+main section .right .presets {
+  display: flex;
+  gap: var(--gutter-md);
+  flex-wrap: wrap;
+}
+main section .right .presets button {
+  padding: var(--padding-md);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--text-secondary-color);
+  outline: none;
+  background-color: transparent;
+  color: var(--text-secondary-color);
+  font-size: var(--font-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main section .right .presets button:hover {
+  filter: brightness(1.2);
+  color: var(--text-secondary-color);
+}
+main section .right .presets button:active {
+  transform: scale(0.95);
 }/*# sourceMappingURL=style.css.map */
