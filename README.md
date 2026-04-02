@@ -21,7 +21,6 @@ Lumina is a modern, intuitive web-based image editor featuring 9 powerful adjust
 - [Installation](#installation) - Clone & run locally
 - [Tips & Tricks](#tips--tricks-for-better-editing) - Pro editing techniques
 - [Troubleshooting](#troubleshooting) - Common issues & solutions
-- [Customization](#customization--extension-guide) - Add your own presets
 - [Technology](#technology-stack) - Built with modern web standards
 - [Browser Support](#browser-support) - Compatibility info
 
@@ -32,12 +31,14 @@ Lumina is a modern, intuitive web-based image editor featuring 9 powerful adjust
 ### 🚀 5-Minute Startup
 
 **Option 1: Online (No Installation)**
+
 - Open `index.html` in your browser
 - Click **Upload** and select an image
 - Adjust filters or pick a preset
 - Click **Export** to download
 
 **Option 2: Clone from GitHub**
+
 ```bash
 git clone https://github.com/mannatgupta146/Lumina-Image-Editor.git
 cd Lumina-Image-Editor
@@ -52,47 +53,45 @@ cd Lumina-Image-Editor
 
 Lumina provides 9 powerful and intuitive filters to transform your images. Each filter is adjustable via interactive sliders with real-time preview. All adjustments are non-destructive—your original image remains unchanged.
 
-| Filter           | Range | Unit | Description                                                                                             |
-| ---------------- | ----- | ---- | ------------------------------------------------------------------------------------------------------- |
-| **Brightness**   | 0-200 | %    | Adjust overall brightness. Tip: Use 110-120% to fix underexposed photos.                               |
-| **Contrast**     | 0-200 | %    | Control light and dark differences. Tip: Combine with saturation at 120% for vibrant look.             |
-| **Saturation**   | 0-200 | %    | Adjust color intensity. 0% = grayscale, 200% = hyper-saturated. Tip: Use 130% for social media.       |
-| **Hue Rotation** | 0-360 | deg  | Rotate colors around the wheel. Tip: 180 degrees inverts colors, 20-40 degrees shifts warm to cool.    |
-| **Blur**         | 0-20  | px   | Apply Gaussian blur for softness. Tip: Combine with reduced contrast for portraits.                    |
-| **Grayscale**    | 0-200 | %    | Convert to shades of gray. Tip: 100% = classic B&W, 50% = muted tones.                                 |
-| **Sepia**        | 0-200 | %    | Add warm, brownish vintage tones. Tip: Combine with 70% grayscale for authentic vintage.               |
-| **Invert**       | 0-200 | %    | Reverse colors for negative effect. Tip: Combine with hue rotation for surreal effects.                |
-| **Opacity**      | 0-100 | %    | Control transparency. Tip: Use 30-50% for watermark protection.                                        |
+| Filter           | Range | Unit | Description                                                                                         |
+| ---------------- | ----- | ---- | --------------------------------------------------------------------------------------------------- |
+| **Brightness**   | 0-200 | %    | Adjust overall brightness. Tip: Use 110-120% to fix underexposed photos.                            |
+| **Contrast**     | 0-200 | %    | Control light and dark differences. Tip: Combine with saturation at 120% for vibrant look.          |
+| **Saturation**   | 0-200 | %    | Adjust color intensity. 0% = grayscale, 200% = hyper-saturated. Tip: Use 130% for social media.     |
+| **Hue Rotation** | 0-360 | deg  | Rotate colors around the wheel. Tip: 180 degrees inverts colors, 20-40 degrees shifts warm to cool. |
+| **Blur**         | 0-20  | px   | Apply Gaussian blur for softness. Tip: Combine with reduced contrast for portraits.                 |
+| **Grayscale**    | 0-200 | %    | Convert to shades of gray. Tip: 100% = classic B&W, 50% = muted tones.                              |
+| **Sepia**        | 0-200 | %    | Add warm, brownish vintage tones. Tip: Combine with 70% grayscale for authentic vintage.            |
+| **Invert**       | 0-200 | %    | Reverse colors for negative effect. Tip: Combine with hue rotation for surreal effects.             |
+| **Opacity**      | 0-100 | %    | Control transparency. Tip: Use 30-50% for watermark protection.                                     |
 
 ### 🎭 Professional Presets
 
 Choose from 21 carefully crafted presets that combine filters for specific visual styles:
 
-| Preset | Best For | Visual Style |
-|--------|----------||---------|
-| Normal | Default | Original colors |
-| Vivid | Landscapes | High saturation and contrast |
-| Warm | Portraits | Golden, flattering tones |
-| Cool | Water scenes | Blue-shifted, calming |
-| Black & White | Classic | Pure monochrome |
-| Vintage | Retro | Faded sepia |
-| Faded | Dreamy | Low contrast, soft |
-| Dramatic | Bold | Maximum contrast |
-| Dreamy | Artistic | Soft blur and warmth |
-| Neon | Modern | Vibrant, futuristic |
-| Retro | 70s/80s | Warm sepia tone |
-| High Contrast | Graphics | Maximum detail |
-| Soft | Minimalist | Gentle, smooth |
-| Noir | Moody | Extreme B&W contrast |
-| Sepia | Antique | Classic brown tones |
-| Ocean | Water | Cool saturated blues |
-| Sunset | Golden hour | Orange/gold warmth |
-| Midnight | Night | Cool, dark tones |
-| Cyberpunk | Futuristic | Intense purples |
-| Forest | Nature | Green-shifted tones |
-| Polaroid | Instant film | Warm vintage |
+🎬 **Normal** - Default | Original colors
+📷 **Vivid** - Landscapes | High saturation and contrast
+🌅 **Warm** - Portraits | Golden, flattering tones
+💧 **Cool** - Water scenes | Blue-shifted, calming
+⬛ **Black & White** - Classic | Pure monochrome
+🎞️ **Vintage** - Retro | Faded sepia
+☁️ **Faded** - Dreamy | Low contrast, soft
+⚡ **Dramatic** - Bold | Maximum contrast
+✨ **Dreamy** - Artistic | Soft blur and warmth
+🌟 **Neon** - Modern | Vibrant, futuristic
+🕰️ **Retro** - 70s/80s | Warm sepia tone
+🔆 **High Contrast** - Graphics | Maximum detail
+😌 **Soft** - Minimalist | Gentle, smooth
+🎬 **Noir** - Moody | Extreme B&W contrast
+🟫 **Sepia** - Antique | Classic brown tones
+🌊 **Ocean** - Water | Cool saturated blues
+🌇 **Sunset** - Golden hour | Orange/gold warmth
+🌙 **Midnight** - Night | Cool, dark tones
+💜 **Cyberpunk** - Futuristic | Intense purples
+🌲 **Forest** - Nature | Green-shifted tones
+📸 **Polaroid** - Instant film | Warm vintage
 
-*Presets are starting points - adjust sliders after applying for custom results.*
+_Presets are starting points - adjust sliders after applying for custom results._
 
 ### 🎯 User Experience
 
@@ -120,6 +119,7 @@ Choose from 21 carefully crafted presets that combine filters for specific visua
 ### 🔧 Setup Options
 
 **Option 1: Use Online (Simplest)**
+
 - Download the files or clone the repo
 - Open `index.html` directly in your browser
 - No server or build tools needed!
@@ -144,12 +144,14 @@ start index.html
 ```
 
 **Option 3: Download ZIP**
+
 1. Visit https://github.com/mannatgupta146/Lumina-Image-Editor
 2. Click **Code** → **Download ZIP**
 3. Extract the ZIP file
 4. Open `index.html` in your browser
 
 ### ✅ Requirements
+
 - Modern web browser (Chrome, Firefox, Safari, or Edge)
 - No installation needed
 - No dependencies or packages to install
@@ -247,6 +249,7 @@ Image Editor/
 **HDR Look** - Boost Contrast +30% + Saturation +40% + Brightness +15%
 
 **By Scenario:**
+
 - Dark photos: Brightness +20-30%, Contrast +15-20%, Saturation +10-15%
 - Bright photos: Brightness -10-15%, Contrast +15-25%, Saturation -10%
 - Flat photos: Saturation +20-40%, Contrast +20-30%
@@ -254,14 +257,14 @@ Image Editor/
 
 ## Troubleshooting 🔧
 
-| Issue | Solution |
-|-------|----------|
-| **Image not showing** | Check file format (JPG, PNG, GIF, WebP) - Verify file isn't corrupted - Try different image - Clear browser cache |
-| **Filters are slow** | Use smaller image - Close other browser tabs - Update browser - Large images (>8MP) may lag |
-| **Preset highlighting not visible** | Use modern browser (Chrome, Firefox, Safari, Edge) - Click another preset then back - Try page refresh |
-| **Export creates blank file** | Ensure image is uploaded - Reset filters then reapply - Use different image - Check download permissions |
-| **Filters have no effect** | Normal for subtle filters - Try max slider values - Combine with other filters |
-| **Can't undo changes** | Click **Reset** to restore all filters instantly - No multi-level undo, but one-click reset always available |
+| Issue                               | Solution                                                                                                          |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Image not showing**               | Check file format (JPG, PNG, GIF, WebP) - Verify file isn't corrupted - Try different image - Clear browser cache |
+| **Filters are slow**                | Use smaller image - Close other browser tabs - Update browser - Large images (>8MP) may lag                       |
+| **Preset highlighting not visible** | Use modern browser (Chrome, Firefox, Safari, Edge) - Click another preset then back - Try page refresh            |
+| **Export creates blank file**       | Ensure image is uploaded - Reset filters then reapply - Use different image - Check download permissions          |
+| **Filters have no effect**          | Normal for subtle filters - Try max slider values - Combine with other filters                                    |
+| **Can't undo changes**              | Click **Reset** to restore all filters instantly - No multi-level undo, but one-click reset always available      |
 
 ## Performance 🚀
 
@@ -289,17 +292,11 @@ Lumina uses the **HTML5 Canvas API** combined with modern CSS filters to deliver
 6. User can download the final result as PNG
 
 **Performance Optimization:**
+
 - Filters use native browser APIs (no heavy computation)
 - Real-time processing at 60+ frames per second on modern browsers
 - Minimal memory footprint with efficient DOM manipulation
 - Lazy loading of preset data
-
-## Performance
-
-- Lightweight (~50KB total)
-- No external dependencies
-- Smooth real-time processing on modern browsers
-- Optimized for desktop and tablet viewing
 
 ## Known Limitations 📋
 
